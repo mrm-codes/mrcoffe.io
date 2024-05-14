@@ -5,12 +5,119 @@
     box-sizing: border-box;
     color: black;
 }
+/*navegation menu*/
 .logo-container{
     width: 150px;
     height: 150px;;
 }
 
+.popup{
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.25);
+    background-color: rgb(255,255,255);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,.15);
+    width: 30%;
+    padding: 20px 30px;
+    border-radius: 2px;
+    transition: top 0ms ease-in-out 300ms;
+}
 
+.popup.active{
+    top: 300%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 300ms;
+}
+
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 4%;
+    height: 3%;
+    background-color: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+.popup .form h2{
+    color: #ffffff;
+    background-color: #222;
+    text-align: center;
+    margin: 1.5% .5% 2% .5%;
+    border-radius: 5px;;
+}
+
+.popup .form .period{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.popup .form .period .form-element{
+    margin: 0 5% 0 0;
+    padding: 0 5% 0 0;
+}
+
+.popup .form .form-element{
+    margin: 2.5% 0;
+}
+
+.popup .form .form-element{
+    font-size: 14px;
+    color: #222;
+    
+    font-size: medium;
+}
+
+.popup .form .form-element select[name="days"],
+.popup .form .form-element input[type="time"],
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="number"],
+.popup .form .form-element textarea{
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+.popup .form .form-element select[name="days"]{
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.popup .form .form-element input[type="submit"]{
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #222;
+    color: #ffffff;
+    border-radius: 5px;
+    
+    font-weight: 700;
+    padding: 10px 0;
+    cursor:pointer;
+}
 
 video{
     width: 95%;
