@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-black bg-white nav-justify-center ">
         <!--Logo-->
         <a class="navbar-brand" href="index.html">
-            <img src="../media/images/MR_COFFEE.png" width="30%" height="30%" alt="logo">
+            <img src="../media/images/MR_COFFEE.png"  alt="logo">
         </a>
         <!--Hamburgur button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,17 +60,29 @@
                 <!--Name-->
                 <div class="form-element">
                     <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" required>
+                    <input 
+                    type="text"
+                    name="fullname" 
+                    id="fullname" required>
+                    
                 </div>
                 <!--Number-->
                 <div class="form-element">
                     <label for="contact">Contact Number</label>
-                    <input type="number" name="contact" id="contact" placeholder="(xxx-xxx-xxxx)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input 
+                    type="number"
+                    name="contact" 
+                    id="contact" 
+                    placeholder="(xxx-xxx-xxxx)"  required>
+                    
                 </div>
                 <div class="period">
                 <!--Select Day-->
                 <div class="form-element">
-                    <select name="days" required> <option value="select-day">Select a Day</option>
+                    <select name="days"> 
+                        <option 
+                        value="select-day" 
+                        >Select a Day</option>
                         <option value="monday">Monday</option>
                         <option value="tuesday">Tuesday</option>
                         <option value="wednesday">Wednesday</option>
@@ -84,13 +96,19 @@
                 <!--Select Time-->
                 <div class="form-element">
                     <label for="select-time">Select Time:</label>
-                    <input type="time" name="select-time" id="select-time" placeholder="(xxx-xxx-xxxx)" required>
+                    <input 
+                    type="time" 
+                    name="select-time" 
+                    id="select-time" required>
                 </div>
                 </div>
                 <!--Number of people-->
                 <div class="form-element">
-                    <label for="number-of-peiople">For how many people?</label>
-                    <input type="number" name="number-of-peioplee" id="number-of-peiople" min="1" required>
+                    <label 
+                    for="number-of-people"> For how many people?</label>
+                    <input 
+                    type="number" 
+                    name="number-of-people" id="number-of-people" min="1" required>
                 </div>
                 <!--Notes-->
                 <div class="form-element">
@@ -106,13 +124,9 @@
                 
             </div>
         </div>
-
-
-
         
     </nav>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
+    
     <!--the video showcase goes here-->
     <div class="video-container">
         <h2>There's nothing better than a Hot Coffee</h2>
@@ -195,19 +209,26 @@
     </div>
 <div class="write">
     <form >
-        <label for="fullname">Full Name
-            <input type="text" name="fullname" placeholder="Your name" required></label>
-        <label for="fullname">Email
-            <input type="email" name="email" placeholder="Your name" required></label>
+        <label for="full-name">Full Name</label>
+            <input 
+            type="text" 
+            name="full-name" 
+            id="full-name" required>
+
+        <label for="email">Email</label>
+            <input 
+            type="email" 
+            name="email" 
+            id="email" required>
         <label for="write-message">Message</label>
-        <textarea name="write-message" cols="30" rows="10"></textarea>
+        <textarea 
+        name="write-message" 
+        id="write-message" 
+        cols="30" rows="10"></textarea>
 
     </form>
 </div>
-
-</body>
 <footer>
-    
     <ul>
         <li>Home</li>
         <li>About</li>
@@ -223,4 +244,7 @@
     All the rights &copf; are reserved 2024!
 
 </footer>
+</body>
+
+
 </html>
