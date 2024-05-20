@@ -1,12 +1,9 @@
 /* Creating active class*/
+let popup = document.getElementById("show-form");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
 
-/*opening*/
-document.querySelector("#show-form").addEventListener("click", function(){
-    document.querySelector(".popup").classList.add("active");
-});
-
-/*closing*/
-document.querySelector(".popup  .close-btn").addEventListener("click", function(){
-    document.querySelector(".popup").classList.remove("active");
-});
-docu
+function closePopup(){
+    popup.classList.remove("open-popup");
+}

@@ -1,40 +1,64 @@
 *{
-    background-color: rgba(255,255,255,1);
+    background-color: #eee;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
+    color: #222;
 }
 /*navegation menu*/
 /*LOGO*/
-.navbar-brand img{
-    width: 30%;
-    height: 30%;
+
+.navbar-brand{
+    width: 200px;
+    height: 200px;
+    background-image: url(../media/images/bg/bg-city.jpg);
+    
 } 
+
+.navbar-brand img {
+    width: 100%;
+    height: 90%;
+    background-image: url(../media/images/bg/bg-city.jpg);
+    }
+
+#navbarSupportedContent{
+    background-image: url(../media/images/bg/bg-city.jpg);
+    margin-left: 25%;
+}
+#navbarSupportedContent li{
+    background-image: url(../media/images/bg/bg-city.jpg);
+    padding: 0 10%;
+}
+#ulnavbar a{
+    background-image: url(../media/images/bg/bg-city.jpg);
+    color: #eee;
+    font-size: 18px;
+}
+
+#ulnavbar .dropdown-menu a:hover{
+   outline: 1px solid #eee;
+}
 
 /*RESERVATION BUTTON SETTINGS*/
 .popup{
     position: absolute;
     top: 300%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(1.25);
+    transform: translate(-50%,-50%) scale(1);
     background-color: rgb(255,255,255);
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,.15);
     width: 30%;
+    visibility: visible;
     padding: 20px 30px;
     border-radius: 2px;
-    transition: top 0ms ease-in-out 300ms,
-                opacity 300ms ease-in-out 0ms,
-                transform 3ms ease-in-out 0ms;
+    transition: transform 0.5s, ease-in-out;;
 }
 
-.popup.active{
+.open-popup{
     top: 300%;
-    opacity: 1;
     transform: translate(-50%,-50%) scale(1);
-    transition: top 0ms ease-in-out 300ms,
-                opacity 300ms ease-in-out 0ms,
-                transform 3ms ease-in-out 0ms;
+    visibility: visible;
+
 }
 
 .popup .close-btn{
@@ -43,7 +67,7 @@
     right: 10px;
     width: 4%;
     height: 3%;
-    background-color: #888;
+    background-color: #c44444;
     color: #eee;
     text-align: center;
     line-height: 15px;
@@ -68,6 +92,7 @@
     width: 100%;
     
 }
+
 .popup .form .period .form-element{
     margin: 0 5% 0 0;
     padding: 0 5% 0 0;
@@ -97,6 +122,7 @@
     border: 1px solid #aaa;
     border-radius: 3px;
 }
+
 .popup .form .form-element select[name="days"]{
     margin-top: 3px;
     display: block;
@@ -119,16 +145,25 @@
     background-color: #222;
     color: #ffffff;
     border-radius: 5px;
-    
     font-weight: 700;
     padding: 10px 0;
     
 }
 /*Index Page*/
 /* VIDEO SETTINGS*/
+.video-container{
+    background-color: #222;
+    text-align: center;
+}
+.video-container h1{
+    background-color: inherit;
+    color: #ffff;
+}
 video{
-    width: 95%;
+    width: 98%;
     height: 65%; 
+    align-items: center;
+    margin: .1% 1%;
 }
 
 /*ANIMATION SETTINGS*/
@@ -147,22 +182,25 @@ video{
 /*SLIDE-SHOW SETTINGS*/
 .carousel{
     text-align: center;
-    background-color: rgb(111, 78, 55);
+    background-color: #222;
     display: inline-block;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
+
 .carousel h2{
 text-align: center;
+color: #ffff;
 padding: 25px;
+background-color: rgb(25, 206, 206);
+border: teal 1px solid;
 }
 
 .carousel::before{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to left,rgba(204, 30, 30, 0), rgba(14, 100, 20, 0.863));
     content: "";
     z-index: 2;
 }
@@ -172,55 +210,180 @@ padding: 25px;
 .carousel-container{
     display: inline-flex;
     overflow: hidden;
-    width: 95%;
+    width: 98%;
     height: auto;
     text-align: center;
-    margin:  0.25% 2.5%;
+    margin:  0.1% 1%;
+    background-color: #222;
+   
 }
 .carousel-slide{
     display: grid;
-    
-    animation: 55s slide infinite linear;
+    background-color: #696969;
+    animation: 30s slide infinite linear;background-color: #222;
 }
 
 .carousel-slide img{
     width: 700px;
     height: 490px;
-    margin: 0 25px;
+    margin: 0 .75px;
     padding: 0;
+    
 }
 .carousel-slide h3, h4{
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: #222;
+    color:#ffff;
+    padding: 10px 0;
+    
+}
+.carousel-slide span, a{
+    color: tomato;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #222;
 }
 
 /*FEEDBACK SETTINGS*/
 .testimonial{
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #222;
     display: inline-block;
-    overflow: hidden;
+    
     position: relative;
     width: 100%;
+    box-sizing: border-box;
+}
+.testimonial h2{
+    text-align: center;
+    color: #ffff;
+    padding: 25px;
+    background-color: rgb(25, 206, 206);
+    border: teal 1px solid;
 }
 .comment-box{
     display: inline-flex;
-    overflow: hidden;
-    width: 95%;
+    background-color: #222;
+    width: 98%;
     height: 15%;
     text-align: center;
-    margin:  0.25% 2.5%;
-   
+    margin:  0.1% 1%;
+    border-top: #aaa solid 2px;
+    border-bottom: #aaa solid 2px;;
+   overflow: hidden;
+}
+
+.comments{
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: .2%;
+    padding: 0;
+    ;
+    animation: 60s slide infinite linear;background-color: #222
 }
 
 .comments p{
     text-align: justify;
-    
+    color:#eee;
+    background-color: #222;
+    width: 700px;
+    height: 60px;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    padding-left: 10px;
 }
-.comments{
-    padding: 2%;
-       
+
+.comments h4{
+    text-align: left;
+    font-style: italic;
+    color:#eee;
+    
+    border-bottom: #888;
+    margin: 0;
+    padding-left: 10px;
+    width: 800px;
+}
+
+
+.comments span{
+    text-align: right;
+    font-style: italic;
+    color:#eee;
+    background-color: #222;
+    border-bottom: #888;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    background-image: url(..//media/images/bg/bg-wood.jpg);
+    width: 100%;
+}
+.links, ul, h3{
+    background: inherit; 
+    color: #eee;
+}
+.links ul a{
+    background: inherit;
+    display: list-item;
+    font-size: 15px;
+    color: #eee;text-decoration: none;
+}
+ .message form{
+    background-color:#222;
+    width: 350px;
+    padding: 10px;
+    color:#eee;
+    border: #aaa 1px solid;
+    border-radius: 5px;
+    display: grid;
+    position: absolute;
+    top: 215%;
+    right: 0;
+    color: #eee;
+    margin: 0 10px;
+ }
+ 
+.message form input[type="text"], input#email,
+.message form textarea[name="write-message"]{
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    outline: #eee;
+    border: #aaa 1px solid;
+    border-radius: 10px;
+    color: #eee;
+    background-color:#222;
+}
+.message form input[type="submit"]{
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    outline: #eee;
+    border: #aaa 1px solid;
+    border-radius: 10px;
+    color: #eee;
+    background-color:teal;
+    font-weight: 700;
+}
+
+.message form label{
+    color:#eee;
+    background-color: #222;
+    font-size: 18px;
 }
 
 
@@ -234,7 +397,7 @@ padding: 25px;
     background-color: rgb(0,0,0);
     align-content: center;
 }
-/* rgb(111, 78, 55) - coffee rgb*/
+
 
 .menus{
     background-image: url(../media/images/bg/bg-botanical.jpg);
@@ -283,6 +446,7 @@ padding: 25px;
    .menu-box h4 span{
     color: tomato;
     font-style: oblique;
+    background-color: #222;
 }
 
 .menu-heading h4:after{
@@ -324,14 +488,122 @@ padding: 25px;
 
 
 /*Events Page*/
+.car-container{
+    color: #eee;
+    background-color: #222;
+    display: flex;}
+
+.past-events, .col-md-3, .upcoming-events{
+    color: #eee;
+    background-color: #222;
+    display: inline;
+    margin: 20px;}
+
+.past-events h3, .upcoming-events h3{
+    color: #eee;
+    background-color: #222;
+    border-bottom: 1px solid #eeee;
+}
+
+ul{
+    list-style-type:none;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    }
+li{
+    color: #eee;
+    background-color: #222;
+}
+
+
 /* CAROUSEL SETTINGS*/
 .container{
-    background-color: #000000;
+    background-color: #222;
     width: 100%;
     display: flex;
+    color: #eee;
 }
+
 .carousel-inner img {
     width: 100%;
-    height: 100%;}
-
+    height: 100%;
+}
+.carousel-caption, .carousel-indicators{
+    background: none;
+}
+.carousel-caption h3{
+    background: transparent;
+    font-size: 80px;
+}
+.carousel-caption p{
+    background: transparent;
+    color: #eee;
+}
+.date{
+    background: none;
+    color: #222;
+}
 /*About Page*/
+p{
+    text-align: justify; 
+    padding-left: 15px;
+}
+.about-container{
+    border:1px solid #222
+}
+
+.coffee-img{
+    width: 250px;
+    height: 250px;
+    background: none;
+}
+
+.coffee-img img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.coffee-text{
+    width: 900px;
+    height: 250px;
+    background: none;}
+    
+.coffee-text h3{
+    border-bottom: #eee 1px solid;
+   color: #eee;
+    padding: 0  10px;
+    background: none;
+}
+
+.coffee-text p{
+    background: none;
+    padding: 0  10px;
+    text-align: justify;
+    color: #eee;
+    
+    
+}
+
+.bucks, .peets, .lava{
+    display: flex;
+    margin-top: 5px;
+    background: none;
+}
+.coffee-box, h2{
+    background-image: url(../media/images/bg/bg-\ chalk.jpg);
+    background-color: #222;
+    color: #eee;
+    margin: 25px 0;
+}
+h3{
+    color: #222;
+    padding: 15px;
+}
+h1{
+    color: #eee;
+    background-image: url(../media/images/bg/bg-\ chalk.jpg);
+    background-color: #222;
+    padding: 15px;
+}

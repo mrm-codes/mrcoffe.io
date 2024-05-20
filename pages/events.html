@@ -17,10 +17,10 @@
     </head>
     <body>
         <!--The navegation menu gos here-->
-        <nav class="navbar navbar-expand-lg navbar-black bg-white nav-justify-center ">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url(../media/images/bg/bg-city.jpg);">
             <!--Logo-->
             <a class="navbar-brand" href="index.html">
-                <img src="../media/images/MR_COFFEE.png"  alt="logo">
+                <img src="../media/images/MR_COFFEE__2_-removebg-preview.png"  alt="logo">
             </a>
             <!--Hamburgur button-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
             </button>
             <!--Navegation contents-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto" id="ulnavbar">
                     <li class="nav-item active">
                         <a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown">
@@ -128,9 +128,9 @@
         </nav>
 <!--contents-->
 
-<div class="container">
+<div class="car-container">
     
-    <div class="past-events col-4">
+    <div class="past-events col-md-3">
         <h3>Past Events</h3>
         <ul>
             <li>Something</li>
@@ -145,8 +145,8 @@
             <li>Something</li>
         </ul>
     </div>
-    <div class="upcoming-events col-8">
-        <h3>Upcommping Events</h3>
+    <div class="upcoming-events">
+        <h3>Upcomming Events...</h3>
         <div id="upevents" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#upevents" data-slide-to="0" class="active"></li>
@@ -156,11 +156,12 @@
                 <li data-target="#upevents" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
+                <div class="carousel-item active" >
                     <img src="../media/images/bg/events/bg-events.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Local Art Exhibition</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum in, repellendus cum libero id voluptas rerum! Corrupti dolore iste soluta?</p>
+                    <div class="carousel-caption d-none d-md-block" style="color: #eee; background-color: #222;">
+                        <h3 >Local Art Exhibition</h3>
+                        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum in, repellendus cum libero id voluptas rerum! Corrupti dolore iste soluta?</p>
+                        <p style="color:#eee;">07/05/2024</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -168,27 +169,31 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Author Talk</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quo pariatur amet eligendi maiores reiciendis labore dolorum sed minima ipsa!</p>
+                        <p style="color:#eee;">07/05/2024</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../media/images/bg/events/tasting.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Come taste new flavours</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                    <div class="carousel-caption d-none d-md-block" >
+                        <h3 style="color:#222;">Come taste new flavours</h3>
+                        <p style="color:#222;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                        <p><span class="date">07/05/2024</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../media/images/bg/events/networking.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Networking</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                    <div class="carousel-caption d-none d-md-block" >
+                        <h3 style="color:#222;">Networking</h3>
+                        <p style="color:#222;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                        <p><span class="date">07/05/2024</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../media/images/bg/events/women.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Your help counts</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                        <h3 style="color:#222;">Your help counts</h3>
+                        <p style="color:#222;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae eligendi alias ratione voluptatem fugit delectus culpa incidunt saepe. Cupiditate.</p>
+                        <p><span class="date">07/05/2024</span></p>
                     </div>
                 </div>
             </div>
@@ -204,8 +209,43 @@
     </div>
    
 </div>
- <div class="suggest">
-        <h3>Write to Us</h3>
-</div>   
+<!--Footer Begins
+<footer>
+    <div class="links">
+        <h3>Links</h3>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+        </ul>
+    </div>
+    
+    <div class="message">
+        <form ><h3 style="color:#eee">Send a Message</h3>
+            <label for="full-name">Full Name</label>
+                <input 
+                type="text" 
+                name="full-name" 
+                id="full-name" required>
+    
+            <label for="email">Email</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" required>
+            <label for="write-message">Message</label>
+            <textarea 
+            name="write-message" 
+            id="write-message" 
+            cols="10" rows="4"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
+   
+
+</footer> 
+<p style="background-image: url(..//media/images/bg/bg-wood.jpg); color: #eee; text-align: center; font-size: medium;">All the rights &copf; are reserved 2024!</p>   Ends-->
 </body>
 </html>

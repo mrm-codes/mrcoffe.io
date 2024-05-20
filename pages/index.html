@@ -17,10 +17,10 @@
 </head>
 <body>
     <!--The navegation menu gos here-->
-    <nav class="navbar navbar-expand-lg navbar-black bg-white nav-justify-center ">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url(../media/images/bg/bg-city.jpg);">
         <!--Logo-->
         <a class="navbar-brand" href="index.html">
-            <img src="../media/images/MR_COFFEE.png"  alt="logo">
+            <img src="../media/images/MR_COFFEE__2_-removebg-preview.png"  alt="logo">
         </a>
         <!--Hamburgur button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
         </button>
         <!--Navegation contents-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto" id="ulnavbar">
                 <li class="nav-item active">
                     <a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item dropdown">
@@ -49,89 +49,19 @@
                 </li>
             </ul>
         </div>
-        <!--reservation button-->
-        <div class="reservation">
-            <button id="show-form" class="btn btn-warning">Make a reservation</button>
-        </div>
-        <div class="popup">
-            <div class="close-btn">&times;</div>
-            <div class="form">
-                <h2>Make a Reservation</h2>
-                <!--Name-->
-                <div class="form-element">
-                    <label for="fullname">Full Name</label>
-                    <input 
-                    type="text"
-                    name="fullname" 
-                    id="fullname" required>
-                    
-                </div>
-                <!--Number-->
-                <div class="form-element">
-                    <label for="contact">Contact Number</label>
-                    <input 
-                    type="number"
-                    name="contact" 
-                    id="contact" 
-                    placeholder="(xxx-xxx-xxxx)"  required>
-                    
-                </div>
-                <div class="period">
-                <!--Select Day-->
-                <div class="form-element">
-                    <select name="days"> 
-                        <option 
-                        value="select-day" 
-                        >Select a Day</option>
-                        <option value="monday">Monday</option>
-                        <option value="tuesday">Tuesday</option>
-                        <option value="wednesday">Wednesday</option>
-                        <option value="thursday">Thursday</option>
-                        <option value="friday">Friday</option>
-                        <option value="saturday">Saturday</option>
-                        
-                    </select>
-                </div>
-                
-                <!--Select Time-->
-                <div class="form-element">
-                    <label for="select-time">Select Time:</label>
-                    <input 
-                    type="time" 
-                    name="select-time" 
-                    id="select-time" required>
-                </div>
-                </div>
-                <!--Number of people-->
-                <div class="form-element">
-                    <label 
-                    for="number-of-people"> For how many people?</label>
-                    <input 
-                    type="number" 
-                    name="number-of-people" id="number-of-people" min="1" required>
-                </div>
-                <!--Notes-->
-                <div class="form-element">
-                    <label for="notes">Any special request?</label>
-                    <textarea name="notes" id="notes" cols="24" rows="8" placeholder="write here"></textarea>
-                    
-                </div>
-                <div class="form-element">
-                    <!--Submit button-->
-                    <input type="submit" value="Book a Table">
-                </div>
-                
-                
-            </div>
-        </div>
+        <!--reservation Reservation-->
+       
+        
+        
         
     </nav>
     
     <!--the video showcase goes here-->
     <div class="video-container">
-        <h2>There's nothing better than a Hot Coffee</h2>
+        <h1>Behind every successful person is a substantial amount of coffee</h1>
         <video src="../media/videos/pouring-coffee.mp4"  autoplay muted loop></video>
     </div>
+    
     <!--carousel--> 
    
     <div class="carousel"> 
@@ -184,66 +114,97 @@
         <h2>What others are saying</h2>
         <div class="comment-box">
             <div class="comments">
-                
-                <h2>Amazing</h2>
+                <h4>Amazing service</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
                 
             </div>
             <div class="comments">
-                <h2>Amazing</h2>
+                <h4>Yummy sandwiches</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
              </div>
             <div class="comments">
-                <h2>Amazing</h2>
+                <h4>Perfect environment for hangout or meet up</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
             </div>
             <div class="comments">
-                <h2>Amazing</h2>
+                <h4>I loved the event</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
             </div>
             <div class="comments">
-                <h2>Amazing</h2>
+                <h4>Amazing</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
+            </div>
+            <div class="comments">
+            <h4>Amazing service</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
+                
+            </div>
+            <div class="comments">
+                <h4>Yummy sandwiches</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
+             </div>
+            <div class="comments">
+                <h4>Perfect environment for hangout or meet up</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
+            </div>
+            <div class="comments">
+                <h4>I loved the event</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
+            </div>
+            <div class="comments">
+                <h4>Amazing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non incidunt voluptates nobis ducimus. Unde accusamus, aspernatur natus suscipit maxime placeat veniam quibusdam tenetur? Asperiores rem magni molestiae sed eius quam quas laudantium a officia deleniti.</p>
+                <p><span>~Author</span></p>
             </div>
         </div>
     </div>
-<div class="write">
-    <form >
-        <label for="full-name">Full Name</label>
-            <input 
-            type="text" 
-            name="full-name" 
-            id="full-name" required>
 
-        <label for="email">Email</label>
-            <input 
-            type="email" 
-            name="email" 
-            id="email" required>
-        <label for="write-message">Message</label>
-        <textarea 
-        name="write-message" 
-        id="write-message" 
-        cols="30" rows="10"></textarea>
-
-    </form>
-</div>
 <footer>
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Community</li>
-        <li>Events</li>
-    </ul>
-    <ul>
-        <li>Location</li>
-        <li>Contact</li>
-        <li>leave a message</li>
-        
-    </ul>
-    All the rights &copf; are reserved 2024!
+    <div class="links">
+        <h3>Links</h3>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+        </ul>
+    </div>
+    
+    <div class="message">
+        <form ><h3 style="color:#eee">Send a Message</h3>
+            <label for="full-name">Full Name</label>
+                <input 
+                type="text" 
+                name="full-name" 
+                id="full-name" required>
+    
+            <label for="email">Email</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" required>
+            <label for="write-message">Message</label>
+            <textarea 
+            name="write-message" 
+            id="write-message" 
+            cols="10" rows="4"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    
+   
 
-</footer>
+</footer> 
+<p style="background-image: url(..//media/images/bg/bg-wood.jpg); color: #eee; text-align: center; font-size: medium;">All the rights &copf; are reserved 2024!</p>
 </body>
 
 
