@@ -51,20 +51,20 @@
         </div>
         <!--reservation Reservation-->
         <button type="button" class="btn btn-warning" 
-        onclick="document.getElementById('popup').style.display='block'">Make a Reservatiom</button>
+        onclick="document.getElementById('popup').classList.add('open-popup')">Make a Reservatiom</button>
         
         <!--Reservation form-->
         <div class="popup" id="popup">
                       
             <div class="reserve">
-                <button class="btn-close" id="btn-close"  onclick="document.getElementById('popup').style.display='none'">&times;</button>
+                <button class="btn-close" id="btn-close"   onclick="document.getElementById('popup').classList.remove('open-popup')">&times;</button>
                 <h2>Make a Reservation</h2>
 
                 <label for="flname">Full Name</label>
-                <input type="text" name="flname" id="flname">
+                <input type="text" name="flname" id="flname" required>
 
                 <label for="phnumber">Phone Number</label>
-                <input type="number" name="phnumber" id="phnumber">
+                <input type="number" name="phnumber" id="phnumber" placeholder="262-xxx-xxxx" required>
                 <div class="time-and-day">
                 <!--Time and Day-->
                 <label for="selectday">Select a Day:</label>
@@ -79,9 +79,10 @@
                 </select>
 
                 <label for="time">Choose your Time</label>
-                <input type="time" name="time" id="time">
+                <input type="time" name="time" id="time" required>
                 </div>
-
+                <label for="peoplenumber">For how many people?</label>
+                <input type="number" name="peoplenumber" id="peoplenumber" placeholder="2" min="1" required>
                 <label for="notes">Any special request?</label>
                 <textarea name="notes" id="notes" cols="14" rows="7" placeholder="Write here..."></textarea>
                 <input type="submit" value="Book Now">
@@ -204,22 +205,30 @@
     </div>
 
 <footer>
-    <div class="links">
-        <h3 style="color: #eee;">Links</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </div>
-    <button type="button" class="btn btn-primary" id="msg-send" 
-        onclick="document.getElementById('message').style.display='block'">Write to Us</button>
-    <div class="message" id="message">
         
-       
-        <form><h3 style="color:#eee;">Send a Message</h3>
-            <button class="msg-close" id="msg-close"  onclick="document.getElementById('message').style.display='none'">&times;</button>
+        
+
+    <div class="links"> 
+    <h3 style="color: #eee;">Links</h3>
+        
+      
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </div>
+
+    <div class="send-btn-cont"><button type="button" class="btn btn-primary" id="msg-send" 
+            onclick="document.getElementById('message').classList.add('message-active')">Write to Us</button>
+    </div>
+    
+    <div class="message" id="message">
+        <form class="msg-form" id="msg-form">
+            <h3 style="color: #eee;">Send a Message</h3>
+            <button class="msg-close" id="msg-close"  onclick="document.getElementById('message').classList.remove('message-active')">&times;</button>
 
             <label for="full-name">Full Name</label>
                 <input 

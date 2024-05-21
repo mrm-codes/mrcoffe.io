@@ -56,31 +56,6 @@
     background-color: red;
     cursor: pointer;
 }
-#msg-close{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #eee;
-    font-size: 20px;
-    background-color: red;
-    cursor: pointer;
-    padding: 0 5px;
-    border-radius: 10px;
-    
-}
-
-#msg-send{
-    position: absolute;
-    top: 260%;
-    right: 2%;
-    color: #eee;
-    font-size: 20px;
-    
-    cursor: pointer;
-
-    
-}
-
 .reserve h2{
     padding: 15px;
     text-align: center;
@@ -109,6 +84,32 @@
     outline: 1px solid #eee;
     border:none;
     color: #eee;
+}
+/*POPUP*/
+.popup{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: #eee;
+    font-size: 18px;
+    background-color: red;
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(.2);
+    visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+.open-popup{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    color: #eee;
+    font-size: 18px;
+    background-color: red;
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    transition: 1s ease-in-out;
 }
 
 /*Index Page*/
@@ -287,21 +288,34 @@ border: teal 1px solid;
 /*FOOTER*/
 footer{
     display: flex;
+    flex-wrap: nowrap;
     background-image: url(..//media/images/bg/bg-wood.jpg);
     width: 100%;
 }
-.links, ul, h3{
+.send-btn-cont, .links, ul, h3{
     background: inherit; 
     color: #eee;
     
 }
-.links ul a, li{
-    background: inherit;
+.links, .send-btn-cont{
+    width: 100%;
+    margin: 0 15px;
+}
+
+.links ul {
+    background: none;
     display: list-item;
     font-size: 15px;
     color: #eee;text-decoration: none;
 }
- .message form{
+.links li a{
+    background-image: url(..//media/images/bg/bg-wood.jpg);
+    width: 100%;
+    display: list-item;
+    font-size: 15px;
+    color: #eee;text-decoration: none;
+}
+ .message {
     background-color:#222;
     width: 350px;
     padding: 10px;
@@ -310,12 +324,40 @@ footer{
     border-radius: 5px;
     display: grid;
     position: absolute;
-    top: 215%;
-    right: 0;
+    bottom: -100%;
+    left: 50%;
     color: #eee;
     margin: 0 10px;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(.2);
+    transition: 1s ease-in-out;
+    
  }
  
+
+ .message-active{
+    background-color:#222;
+    width: 350px;
+    padding: 10px;
+    color:#eee;
+    border: #aaa 1px solid;
+    border-radius: 5px;
+    display: grid;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    color: #eee;
+    margin: 0 10px;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 1s ease-in-out;
+    
+ }
+ form,.message label, h3{
+    background-color: #222;
+    color: #eee;
+ }
+
 .message form input[type="text"], input#email,
 .message form textarea[name="write-message"]{
     margin-top: 3px;
@@ -347,6 +389,24 @@ footer{
     color:#eee;
     background-color: #222;
     font-size: 18px;
+}
+
+#msg-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #eee;
+    font-size: 20px;
+    background-color: red;
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 10px;
+    
+}
+
+#msg-send{
+    margin-left: 80%;
+    
 }
 
 
