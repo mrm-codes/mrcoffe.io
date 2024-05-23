@@ -8,7 +8,7 @@ As part of my program, I build a business website, a cafe, as a representation o
 This project encompasses,a local business being incorporated into a website, that allows user to navegate to menus, business events and it has more information about the business. Through the website, users can not only have access in what the business offer, but they also are able to make reservations. 
 
 ##How to Use it?
-1. You can access the website with this ####link:
+1. You can access the website with this ####link: https://mrm-codes.github.io/mrcoffe.io/
 2. Use your mouse or fingertips to navegate through the page.
 3. In the home page you can find navegation menu on the top that can take you to where service that interests you. On the bottom you'll find the same links, in case you need them.
 4. The navegation menu, contains the business logo, home, menu, events, business information (about) and button to make a reservation. Each item on the navegation menu has your actions. For example, the Logo and home, takes you to initial page wherever you are. The menu, events and about, takes you to its respective pages. The "make a reservation button" provides you a form with details of your reservation, such as your name, contact, day and time, and extra notes if you have one.
