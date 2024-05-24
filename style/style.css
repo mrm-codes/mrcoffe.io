@@ -40,14 +40,6 @@
    outline: 1px solid #eee;
 }
 
-/*RESERVATION BUTTON SETTINGS*/
-.reserve {
-    position:absolute;
-    top: 50%;
-    left:50%;
-    display: grid;
-    background-color:#222;
-}
 #btn-close{
     position: absolute;
     top: 10px;
@@ -57,10 +49,6 @@
     background-color: red;
     cursor: pointer;
 }
-.reserve h2{
-    padding: 15px;
-    text-align: center;
-}
 
 .reserve label{
     color:#eee;
@@ -69,6 +57,12 @@
     font-weight: 600;
     padding: 5px 0 10px 15px;
 }
+
+.reserve h2{
+    padding: 15px;
+    text-align: center;
+}
+
 .time-and-day{
     background-color: #222;
     display: flex;
@@ -79,36 +73,48 @@
 .reserve input[type="time"],
 .reserve input[type="submit"], #selectday, #notes{
     margin: 5px 15px 10px 15px;
-    padding: 10px;
+    padding: 7px;
     background-image: url(../media/images/bg/bg-city.jpg);
     background-color: #696969;
     outline: 1px solid #eee;
     border:none;
     color: #eee;
 }
+.reserve input[type="submit"]{
+    cursor: pointer;
+}
+
+.reserve {
+    background-color: #222;
+    display: grid;
+     
+}
+
+
 /*POPUP*/
 .popup{
     position: absolute;
-    top: 50%;
-    right: 50%;
+    top: 0%;
+    left: 50%;
     color: #eee;
-    font-size: 18px;
+    font-size: 15px;
     background-color: red;
     cursor: pointer;
-    transform: translate(-50%, -50%) scale(.2);
+    transform: translate(-50%, -0%) scale(.1);
     visibility: hidden;
     transition: 1s ease-in-out;
 }
 
 .open-popup{
     position: absolute;
-    top: 50%;
-    right: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
     color: #eee;
-    font-size: 18px;
-    background-color: red;
+    font-size: 20px;
+   
     cursor: pointer;
-    transform: translate(-50%, -50%) scale(1);
+    
     visibility: visible;
     transition: 1s ease-in-out;
 }
