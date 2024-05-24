@@ -1,4 +1,5 @@
 Introduction
+
 My name is Mario Matundulo, an aspiring software engineer, currently studying at Ed2go academy.
 
 As part of my program, I build a business website, a cafe, as a representation of a local business owner who wants its business to reach more customers and be user-friendly for actual and future customers. This project is to showcase my skills in HTML, CSS and GitHub when working with a project. I believe there's a lot to be done, but this is what I could do with the knowledge that I have.
