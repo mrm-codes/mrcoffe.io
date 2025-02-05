@@ -8,7 +8,7 @@ Project Description
 This project encompasses a local business being incorporated into a website that allows users to navigate to menus, business events and it has more information about the business. Through the website, users can not only have access to what the business offers, but they also are able to make reservations. 
 
 How to Use it?
-1. You can access the website with this link: https://mrm-codes.github.io/mrcoffe.io/
+1. You can access the website with this link: https://mrm-codes.github.io/mrcoffee.io/
 2. Use your mouse or fingertips to navigate through the page.
 3. In the home page you can find a navigation menu on the top that can take you to the service that interests you. On the bottom you'll find the same links, in case you need them.
 4. The navigation menu contains the business logo, home, menu, events, business information (about) and button to make a reservation. Each item on the navigation menu has your actions. For example, the Logo and home, takes you to the initial page wherever you are. The menu, events and about, takes you to its respective pages. The "make a reservation button" provides you with a form with details of your reservation, such as your name, contact, day and time, and extra notes if you have one.
