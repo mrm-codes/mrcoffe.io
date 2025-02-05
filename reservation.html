@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <!--required links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+     <!--The navegation menu gos here-->
+     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <!--Logo-->
+        <a class="navbar-brand" href="index.html">
+            Mr. Co<span class="ff">ff</span><span class="ee">ee</span>
+        </a>
+        <!--Hamburgur button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navegation contents-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="ulnavbar">
+                <li class="nav-item active">
+                    <a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a href="./pages/menu.html" class="nav-link">Menu</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./pages/events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+        <!--reservation Reservation-->
+        <button type="button" id="btn"><a href="reservation.html">Make a Reservation</a></button>
+        
+    </nav>
+  
+    <!--Reservation form-->
+<div class="reservation" id="reservation">
+                      
+    <div class="reserve">
+        <h2>Book Your Table</h2>
+        <p>Please fill out this form to secure your reservation.</p>
+        
+        <form>
+            <label for="flname">Full Name</label>
+            <input type="text" name="flname" id="flname" required>
+
+            <label for="phnumber">Phone Number</label>
+            <input type="number" name="phnumber" id="phnumber" placeholder="262-xxx-xxxx" required>
+            <div class="time-and-day">
+            <!--Time and Day-->
+            <label for="selectday">Select a Day:</label>
+            <select name="selectday" id="selectday">
+                <option value="select-a-day">Select a Day</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+
+            <label for="time">Choose your Time</label>
+            <input type="time" name="time" id="time" required>
+            </div>
+            <label for="peoplenumber">For how many people?</label>
+            <input type="number" name="peoplenumber" id="peoplenumber" placeholder="2" min="1" required>
+            <label for="notes">Any special request?</label>
+            <textarea name="notes" id="notes" cols="14" rows="7" placeholder="Write here..."></textarea>
+            <input type="submit" value="Book Now">
+        </form>
+           
+
+
+    </div>
+</div>
+   
+
+<footer>
+    <div class="links"> 
+        <h3 >Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/menu.html">Menu</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i> Pinterest</a>
+        
+    </div>
+
+    <div class="contact">
+        <h3>Contact us</h3>
+        <p>Phone: 262-xxx-xxxx</p>
+        <p>Email:xyz@http.com</p>
+    </div>
+    
+   
+
+</footer> 
+<p style="text-align: center; padding-top: 10px; font-family: 'Times New Roman', Times, serif;">All the rights &copy; are reserved 2024!</p>
+</body>
+
+
+</html>
+
+
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+        <!--required links-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+        <!--Jquery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="../scripts/script.js"></script>
+    
+        <link rel="stylesheet" href="../style/style.css">
+       
+    </head>
+<body>
+       <!--The navegation menu gos here-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <!--Logo-->
+        <a class="navbar-brand" href="../index.html">
+            Mr. Co<span class="ff">ff</span><span class="ee">ee</span>
+        </a>
+        <!--Hamburgur button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navegation contents-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="ulnavbar">
+                <li class="nav-item active">
+                    <a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a href="./menu.html" class="nav-link">Menu</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+        <!--reservation Reservation-->
+        <button type="button" id="btn"><a href="../reservation.html">Make a Reservation</a></button>
+        
+    </nav>
+
+    <!--Menu-->
+    <div id="menu-container">
+        <div class="menu-list">
+            
+            <h2>Our Menu</h2>
+            <p class="info">
+                <span class="fa fa-map-marker"></span>
+                Click on the item to see or buy!
+            </p>
+            <div class="menu-item">
+                <!--Coffee-->
+                <h3 id="coffee">Coffees</h3>
+                <div class="item-card">
+                    <div class="card-title">Mocha</div>
+                    <div class="card-description">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French</div>
+                    <div class="card-price">$5.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Espresso</div>
+                    <div class="card-description">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French</div>
+                    <div class="card-price">$3.49</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Capuccino</div>
+                    <div class="card-description">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French</div>
+                    <div class="card-price">$4.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Latte</div>
+                    <div class="card-description">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French</div>
+                    <div class="card-price">$2.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">French Press</div>
+                    <div class="card-description">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French</div>
+                    <div class="card-price">$6.49</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Hot Chocolate</div>
+                    <div class="card-description">
+                        Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French
+                    </div>
+                    <div class="card-price">$1.99</div>
+                </div>
+                
+                <div class="item-card">
+                    <div class="card-title">Americano</div>
+                    <div class="card-description">
+                        It can be served hot or iced, and can be enjoyed plain or with milk, honey, or sugar.
+                    </div>
+                    <div class="card-price">$3.99</div>
+                </div>
+
+                <!--Teas-->
+                <h3 id="teas">Teas</h3>
+                <div class="item-card">
+                    <div class="card-title">Black tea</div>
+                    <div class="card-description">
+                        It can be served hot or iced, and can be enjoyed plain or with milk, honey, or sugar. 
+                    </div>
+                    <div class="card-price">$3.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Oolong tea</div>
+                    <div class="card-description">
+                        It can be served hot or iced, and can be enjoyed plain or with milk, honey, or sugar.
+                    </div>
+                    <div class="card-price">$3.49</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Chai Massala Tea</div>
+                    <div class="card-description">
+                        It can be served hot or iced, and can be enjoyed plain or with milk, honey, or sugar.
+                    </div>
+                    <div class="card-price">$6.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Green tea</div>
+                    <div class="card-description">
+                        It can be served hot or iced, and can be enjoyed plain or with milk, honey, or sugar.
+                    </div>
+                    <div class="card-price">$2.99</div>
+                </div>
+
+                <!--Sandwiches-->
+                <h3 id="sandwich">Sandwiches</h3>
+                <div class="item-card">
+                    <div class="card-title">Veggie Panini</div>
+                    <div class="card-description">
+                        A classic sandwich with your choice of lettuce, tomatoes, and mayo.
+                    </div>
+                    <div class="card-price">$8.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Club Sandwich</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.    <span class="badge badge-warning">New</span>  
+                    </div>
+                    <div class="card-price">$8.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Grilled Cheese</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.
+                        
+                            <span class="badge badge-warning">New</span>
+                        
+                    </div>
+                    <div class="card-price">$6.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Classic BLT</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.
+                        
+                            <span class="badge badge-warning">New</span>
+                        
+                    </div>
+                    <div class="card-price">$6.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Ham and Swiss Croissant</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.
+                    </div>  
+                    <div class="card-price">$9.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Turkey Ham Avocado</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.
+                        
+                            <span class="badge badge-warning">New</span>
+                        
+                    </div>  
+                    <div class="card-price">$7.99</div>
+                </div>
+
+                <div class="item-card">
+                    <div class="card-title">Bagel Salmon</div>
+                    <div class="card-description">
+                        A classic sandwich with bacon, eggs, and your choice of lettuce, tomatoes, and mayo.
+                        
+                            <span class="badge badge-warning">New</span>
+                        
+                    </div>  
+                    <div class="card-price">$7.49</div>
+                </div>
+        
+
+                
+            </div>
+                
+        </div>
+        <!--Item display-->
+        <div class="container-fluid" id="menu">
+            <h2 class="text-center">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 id="coffee">Coffees</h3>
+                    <div class="card">
+                        <img src="../media/images/coffe/mocha.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Mocha</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $5.99</div>
+                    </div>
+                    <div class="card">
+                        <img src="../media/images/coffe/latte.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Latte</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $2.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/coffe/espresso.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Espresso</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $3.49</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/coffe/capuccino.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Capuccino</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $4.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/coffe/french-press.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">French Press</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $6.49</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/coffe/americano.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Americano</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $3.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/coffe/hot-choc.jpg" alt="coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Hot Chocolate</h4>
+                            <p class="card-text">Various types of coffee beans, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#coffee" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $1.99</div>
+                    </div>
+
+                    <h3 id="teas">Teas</h3>
+                    <div class="card">
+                        <img src="../media/images/tea/green-tea.jpg" alt="tea" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Green tea</h4>
+                            <p class="card-text">Various types of green tea, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#tea" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $3.00</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/tea/black-tea.webp" alt="tea" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Black tea</h4>
+                            <p class="card-text">Various types of black tea, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#tea" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $3.00</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/tea/oolong-tea.jpg" alt="tea" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Oolong tea</h4>
+                            <p class="card-text">Various types of oolong tea, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#tea" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $3.50</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/tea/chai-tea.jpg" alt="tea" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Chai Massala Tea</h4>
+                            <p class="card-text">Various types of matcha green tea, such as Ethiopian, Kenyan, Colombian, and French.</p>
+                            <a href="menu.html#tea" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $4.00</div>
+                    </div>
+
+                    <h3 id="sandwich">Sandwiches</h3>
+                    <div class="card">
+                        <img src="../media/images/sandwich/bagel-salmon.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Bagel Salmon</h4>
+                            <p class="card-text">A classic sandwich with grilled cheese.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $7.49</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/turkey-avocado.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Turkey Ham Avocado</h4>
+                            <p class="card-text">A classic sandwich with grilled turkey, bacon, and egg.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $7.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/panini-veg.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Veggie Panini</h4>
+                            <p class="card-text">A classic sandwich with grilled vegetables.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $8.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/BLT-classic.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Classic BLT</h4>
+                            <p class="card-text">A classic sandwich with grilled cheese.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $6.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/club-sandwich.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Club Sandwich</h4>
+                            <p class="card-text">A classic sandwich with grilled cheese.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $8.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/grilled-chesse.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Grilled Cheese</h4>
+                            <p class="card-text">A classic sandwich with grilled cheese.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $6.99</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../media/images/sandwich/ham-and-swiss-croisant.jpg" alt="sandwich" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Ham and Swiss Croissant</h4>
+                            <p class="card-text">A classic sandwich with grilled cheese.</p>
+                            <a href="menu.html#sandwich" class="btn btn-primary">More Info</a>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                        <div class="card-footer">Price: $9.99</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="links"> 
+            <h3 >Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow us on Social Media</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i> Pinterest</a>
+            
+        </div>
+    
+        <div class="contact">
+            <h3>Contact us</h3>
+            <p>Phone: 262-xxx-xxxx</p>
+            <p>Email:xyz@http.com</p>
+        </div>
+        
+       
+    
+    </footer> 
+    <p style="text-align: center; padding-top: 10px; font-family: 'Times New Roman', Times, serif;">All the rights &copy; are reserved 2025!</p>
+    
+    
+</body>
+</html>
